@@ -14,11 +14,23 @@ import { eventoInicioCarga, eventoSetActivado, limpiarNotaActiva } from "../../a
 import AgregarNuevoEvento from "../ui/AgregarNuevoEvento"; // Botón para agregar nuevo evento
 import EliminarEvento from "../ui/EliminarEvento"; // Botón para eliminar evento
 
+moment.locale('es');
 const localizer = momentLocalizer(moment); // Configura moment para su uso con el calendario
 
 // Traducciones específicas para el calendario en español
 const messages = {
-  // ... (traducciones para el calendario)
+  allDay: 'Todo el día',
+  previous: '<',
+  next: '>',
+  today: 'Hoy',
+  month: 'Mes',
+  week: 'Semana',
+  day: 'Día',
+  agenda: 'Agenda',
+  date: 'Fecha',
+  time: 'Hora',
+  event: 'Evento',
+  showMore: total => `+ Ver más (${total})`
 };
 
 const CalendarioScree = () => {

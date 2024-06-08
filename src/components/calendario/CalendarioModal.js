@@ -23,7 +23,6 @@ const customStyles = {
     bottom: "auto",
     marginRight: "-50%",
     transform: "translate(-50%, -50%)",
-    maxWidth: "800px",
     width: "80%",
   },
 };
@@ -195,7 +194,7 @@ const CalendarioModal = () => {
             </div>
 
             {/* Textarea para las notas */}
-            <div className="mb-2">
+            {/* <div className="mb-2">
               <textarea
                 className="form-control"
                 id="notas"
@@ -204,6 +203,20 @@ const CalendarioModal = () => {
                 placeholder="Notas"
                 rows="5"
                 name="notes"
+              ></textarea>
+              <small id="emailHelp" className="form-text text-muted">
+                Información adicional
+              </small>
+            </div> */}
+            <div className="form-group">
+              <textarea
+                type="text"
+                className="form-control"
+                placeholder="Notas"
+                rows="5"
+                name="notes"
+                value={notas}
+                onChange={handleNotasChange}
               ></textarea>
               <small id="emailHelp" className="form-text text-muted">
                 Información adicional
@@ -219,9 +232,9 @@ const CalendarioModal = () => {
         )}
 
         {/* Botón para cerrar el modal */}
-        <button className="btn btn-secondary" onClick={closeModal}>
+        {/* <button className="btn btn-secondary" onClick={closeModal}>
           Cerrar
-        </button>
+        </button> */}
       </Modal>
     </div>
   );

@@ -20,7 +20,7 @@ const AppRouter = () => {
   }, [dispach]);
 
   if(checking){
-    return (<h5>Espere...</h5>)
+    return (<h5>Porfavor espere un momento que nos estamos conectando a la base de datos...</h5>)
   }
 
   return (

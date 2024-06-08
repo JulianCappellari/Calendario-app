@@ -10,19 +10,23 @@ body {
 .navbar {
     background-color: #3498db; // Color de fondo del navbar
     padding: 1rem; // Añadir espacio interno al navbar
+    
     display: flex;
     justify-content: space-between; // Colocar los elementos a los extremos
-    
+    padding-right: 2rem ;
 
     .navbar-span {
         color: #fff; // Color del texto del nombre
         font-size: 1.5rem; // Tamaño de fuente del nombre
         font-weight: bold; // Negrita
+        padding-left:2rem;
+        
     }
 
     .btn {
         background-color: #e74c3c; // Color de fondo del botón
         color: #fff; // Color del texto del botón
+        
         padding: 0.5rem 1rem; // Añadir espacio interno al botón
         border: none; // Eliminar borde
         cursor: pointer; // Cambiar el cursor al pasar sobre el botón
@@ -34,6 +38,7 @@ body {
 
         span {
             margin-right: 0.5rem; // Añadir espacio entre el texto y el borde del botón
+            
         }
     }
 }

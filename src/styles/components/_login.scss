@@ -1,72 +1,70 @@
-// styles.scss
-
 .login-container {
-    margin-top: 4rem;
-    height: 85vh;
-    overflow: hidden; // Evita que aparezca el scroll vertical
-    .row {
-        display: flex;
-        justify-content: center;
-    }
+  margin-top: 4rem;
+  height: 85vh;
+  overflow: hidden; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form-1,
+.login-form-2 {
+  border-radius: 5px;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+  padding: 5%;
+  margin: 0 1rem; /* Ajusta el margen para separar los formularios */
+  flex: 1;
+  max-width: 400px; /* Ajusta el ancho máximo según tus necesidades */
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.login-form-1 {
+  max-height: 900px;
   
-    .login-form-1,
-    .login-form-2 {
-      border-radius: 5px;
-      box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
-      padding: 5%;
-      margin-right: 1rem; // Agregamos un margen derecho para separar los formularios
-      flex: 1; // Hacemos que cada formulario ocupe el 50% del contenedor
-      max-width: 300px;
-    }
-  
-    h3 {
-      text-align: center;
-      margin-bottom: 1rem;
-    }
-  
-    .login-form-2 {
-      background: #0062cc;
-      color: #fff;
-    }
-  
-    form {
-      padding: 10%;
-    }
-  
-    .btnSubmit {
-      width: 100%; // Modificamos el ancho al 100% para ocupar todo el contenedor
-      border-radius: 1rem;
-      padding: 1.5%;
-      border: none;
-      cursor: pointer;
-    }
-  
-    .login-form-1 .btnSubmit {
-      color: #fff;
-      background-color: #0062cc;
-    }
-  
-    .login-form-2 .btnSubmit {
-      background-color: #fff;
-      color: #0062cc;
-      
-    }
-  
-    .ForgetPwd {
-      color: #fff;
-      font-weight: 600;
-      text-decoration: none;
-    }
-  
-    .login-form-1 .ForgetPwd {
-      color: #0062cc;
-    }
-  
-    .form-control {
-        width: 100%; // Hacer que el ancho sea del 100%
-        margin-bottom: 1rem;
-        padding: 0.5rem;
-      }
-    
-  }
-  
+}
+.login-form-2 {
+  background: #0062cc;
+  color: #fff;
+}
+
+form {
+  padding: 10%;
+}
+
+.btnSubmit {
+  width: 100%;
+  border-radius: 1rem;
+  padding: 1.5%;
+  border: none;
+  cursor: pointer;
+}
+
+.login-form-1 .btnSubmit {
+  color: #fff;
+  background-color: #0062cc;
+}
+
+.login-form-2 .btnSubmit {
+  background-color: #fff;
+  color: #0062cc;
+}
+
+.ForgetPwd {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.login-form-1 .ForgetPwd {
+  color: #0062cc;
+}
+
+.form-control {
+  width: 100%; 
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
